@@ -1,0 +1,31 @@
+{% extends '_base.html' %}
+
+{% block hero %}
+
+     <!-- ======= Hero Section ======= -->
+     <section id="hero">
+        <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    
+          <div class="carousel-inner" role="listbox">
+    
+            <!-- Slide 1 -->
+            <div class="carousel-item active" style="background-image: url( static/snacks/img/slide/slide-1.jpg);">
+              <div class="carousel-container">
+                <div class="carousel-content animate__animated animate__fadeInUp">
+                  <h1>{{snack.title}}</h1>
+                  <h2>Would you like to delete this snack?</h2>
+                  <form action="" method="POST">
+                    {% csrf_token %}
+                    <input type="submit" class="btn btn-danger" value="Delete {{snack.title}}">
+                    </form>
+                </div>
+              </div>
+            </div>
+    
+           
+          </div>
+    
+        </div>
+      </section><!-- End Hero -->
+ 
+{% endblock %}

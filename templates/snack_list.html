@@ -1,0 +1,23 @@
+{%extends '_base.html' %}
+    
+
+    {%block main %}
+    <div>
+        <form method="POST" action="{% url 'create_snack' %}">
+            {% csrf_token %}
+            <input type="submit" value="Create Snack" class = "btn btn-primary">
+            
+        </form>
+      </div>
+      <br>
+      <h3>Snack List</h3>
+      <br>
+      <ul>
+        {% for snack in object_list %}
+        <li>
+        <div class="snack-entry">
+          <h3><a href="{% url 'snack_detail' snack.pk %}">{{ snack.title }} - {{ snack.description }}</a></h3></li>
+        </div>
+        {% endfor %}
+    </ul>
+    {% endblock %}

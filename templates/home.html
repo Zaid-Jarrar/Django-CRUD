@@ -1,0 +1,78 @@
+{% extends '_base.html' %}
+
+    {% block hero %}
+      <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url( static/snacks/img/slide/slide-1.jpg);">
+          <div class="carousel-container">
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h2>Welcome to <span>Snacky</span></h2>
+              <p>Customize your own Snack, only in Snacky</p>
+              <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url( static/snacks/img/slide/slide-2.jpg);">
+          <div class="carousel-container">
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h2>Snacky info</h2>
+              <p>Snacky was created in 2015 by Osten Matrich, also known as the king of food. it is well know for its ablity to customize your own food and an experience worth going through</p>
+              <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(  static/snacks/img/slide/slide-3.jpg);">
+          <div class="carousel-container">
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h2>Welcome to <span>Snacky</h2>
+              <p>Enjoy your snacks and your time</p>
+              <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-left-arrow" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bx bx-right-arrow" aria-hidden="true"></span>
+      </a>
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+    </div>
+  </section><!-- End Hero -->
+    {% endblock %}
+
+    {% block main %}
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+          <div class="container">
+
+            <div class="row">
+              <div class="col-lg-6">
+                <h2>About Us</h2>
+                <p>Snacky top of the line resturant </p>
+                <p>Snacky was created in 2015 by Osten Matrich, also known as the king of food. it is well know for its ablity to customize your own food and an experience worth going through</p>
+              </div>
+              <div class="col-lg-6">
+                <div class="about-img">
+                  <img src="static/snacks/img/about-img.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+          </div>
+    {% endblock %}
